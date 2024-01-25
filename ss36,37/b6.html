@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="studentForm">
+        <!-- StudentId -->
+        <label for="studentId">StudentId (6 ký tự):</label>
+        <input type="text" id="studentId" name="studentId" maxlength="6" required>
+        <br>
+    
+        <!-- StudentName -->
+        <label for="studentName">StudentName:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        <br>
+        <!-- Age -->
+        <label for="age">Age (>= 18):</label>
+        <input type="number" id="age" name="age" min="18" required>
+        <br>
+        <!-- Phone -->
+        <label for="phone">Phone (số điện thoại VN):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required>
+        <br>
+        <!-- Email -->
+        <label for="email">Email (định dạng email):</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <!-- Nút Create -->
+        <button type="button" onclick="createStudent()">Create</button>
+    </form>
+
+    <div id="studentInfo"></div>
+
+    <script src="./b6.js"></script>
+</body>
+</html>
